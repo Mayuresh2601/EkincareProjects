@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ekincare Web Application Test Automation Suite">
+
+<listeners>
+<listener class-name="com.ekincare.selenium.extentreport.ExtentReporterNG" />
+</listeners>
+
+<test name = "Ekincare_Web">
+
+<classes>
+<class name="com.ekincare.selenium.homePage.HomePage" />
+<class name="com.ekincare.selenium.benefits.AnnualHealthCheck" />
+<class name="com.ekincare.selenium.benefits.DentalCheckups" />
+<class name="com.ekincare.selenium.benefits.OrderMedicine" />
+<class name="com.ekincare.selenium.benefits.TalkWithDocBenefits" />
+<class name="com.ekincare.selenium.benefits.TalkWithFamilyDoctor" />
+<class name="com.ekincare.selenium.health.Insights" />
+<class name="com.ekincare.selenium.health.MedicalReports" />
+<class name="com.ekincare.selenium.improve.Challenges" />
+<class name="com.ekincare.selenium.improve.Events" />
+  </classes>
+
+</test>
+</suite>

@@ -1,0 +1,344 @@
+<html>
+<head>
+<title>TestNG:  Ekincare_Web</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Ekincare_Web</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>53/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 11 14:36:56 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>3420 seconds (3420880 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.AnnualHealthCheck.FamilyBenefits()'><b>FamilyBenefits</b><br>Test class: com.ekincare.selenium.benefits.AnnualHealthCheck</td>
+<td></td>
+<td>54</td>
+<td>com.ekincare.selenium.benefits.AnnualHealthCheck@778d1062</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.AnnualHealthCheck.FamilyselfBenefits()'><b>FamilyselfBenefits</b><br>Test class: com.ekincare.selenium.benefits.AnnualHealthCheck</td>
+<td></td>
+<td>53</td>
+<td>com.ekincare.selenium.benefits.AnnualHealthCheck@778d1062</td></tr>
+<tr>
+<td title='com.ekincare.selenium.homePage.HomePage.HealthCheckups()'><b>HealthCheckups</b><br>Test class: com.ekincare.selenium.homePage.HomePage</td>
+<td></td>
+<td>44</td>
+<td>com.ekincare.selenium.homePage.HomePage@2b6faea6</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.TalkWithDocBenefits.TalkwithDoc()'><b>TalkwithDoc</b><br>Test class: com.ekincare.selenium.benefits.TalkWithDocBenefits</td>
+<td></td>
+<td>44</td>
+<td>com.ekincare.selenium.benefits.TalkWithDocBenefits@49c386c8</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.TalkWithDocBenefits.TalkwithDocWithFamilyMember()'><b>TalkwithDocWithFamilyMember</b><br>Test class: com.ekincare.selenium.benefits.TalkWithDocBenefits</td>
+<td></td>
+<td>50</td>
+<td>com.ekincare.selenium.benefits.TalkWithDocBenefits@49c386c8</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.TalkWithDocBenefits.TalkwithDocwithAddFamilyMember()'><b>TalkwithDocwithAddFamilyMember</b><br>Test class: com.ekincare.selenium.benefits.TalkWithDocBenefits</td>
+<td></td>
+<td>88</td>
+<td>com.ekincare.selenium.benefits.TalkWithDocBenefits@49c386c8</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.TalkWithDocBenefits.TalkwithDocwithFamilyHomepage()'><b>TalkwithDocwithFamilyHomepage</b><br>Test class: com.ekincare.selenium.benefits.TalkWithDocBenefits</td>
+<td></td>
+<td>62</td>
+<td>com.ekincare.selenium.benefits.TalkWithDocBenefits@49c386c8</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.TalkWithDocBenefits.TalkwithDocwithouFamilyHomepage()'><b>TalkwithDocwithouFamilyHomepage</b><br>Test class: com.ekincare.selenium.benefits.TalkWithDocBenefits</td>
+<td></td>
+<td>60</td>
+<td>com.ekincare.selenium.benefits.TalkWithDocBenefits@49c386c8</td></tr>
+<tr>
+<td title='com.ekincare.selenium.homePage.HomePage.Visioncheckups()'><b>Visioncheckups</b><br>Test class: com.ekincare.selenium.homePage.HomePage</td>
+<td></td>
+<td>50</td>
+<td>com.ekincare.selenium.homePage.HomePage@2b6faea6</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.TalkWithFamilyDoctor.WithFamilymemberschedule()'><b>WithFamilymemberschedule</b><br>Test class: com.ekincare.selenium.benefits.TalkWithFamilyDoctor</td>
+<td></td>
+<td>37</td>
+<td>com.ekincare.selenium.benefits.TalkWithFamilyDoctor@56528192</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.DentalCheckups.dental()'><b>dental</b><br>Test class: com.ekincare.selenium.benefits.DentalCheckups</td>
+<td></td>
+<td>46</td>
+<td>com.ekincare.selenium.benefits.DentalCheckups@670002</td></tr>
+<tr>
+<td title='com.ekincare.selenium.homePage.HomePage.dentalCheckups()'><b>dentalCheckups</b><br>Test class: com.ekincare.selenium.homePage.HomePage</td>
+<td></td>
+<td>44</td>
+<td>com.ekincare.selenium.homePage.HomePage@2b6faea6</td></tr>
+<tr>
+<td title='com.ekincare.selenium.improve.Events.eventsGoing()'><b>eventsGoing</b><br>Test class: com.ekincare.selenium.improve.Events</td>
+<td></td>
+<td>31</td>
+<td>com.ekincare.selenium.improve.Events@1ed1993a</td></tr>
+<tr>
+<td title='com.ekincare.selenium.improve.Events.eventsNotsure()'><b>eventsNotsure</b><br>Test class: com.ekincare.selenium.improve.Events</td>
+<td></td>
+<td>27</td>
+<td>com.ekincare.selenium.improve.Events@1ed1993a</td></tr>
+<tr>
+<td title='com.ekincare.selenium.improve.Events.eventsnotGoing()'><b>eventsnotGoing</b><br>Test class: com.ekincare.selenium.improve.Events</td>
+<td></td>
+<td>26</td>
+<td>com.ekincare.selenium.improve.Events@1ed1993a</td></tr>
+<tr>
+<td title='com.ekincare.selenium.health.Insights.healthInsi()'><b>healthInsi</b><br>Test class: com.ekincare.selenium.health.Insights</td>
+<td></td>
+<td>17</td>
+<td>com.ekincare.selenium.health.Insights@6e0dec4a</td></tr>
+<tr>
+<td title='com.ekincare.selenium.health.MedicalReports.healthMRFamily()'><b>healthMRFamily</b><br>Test class: com.ekincare.selenium.health.MedicalReports</td>
+<td></td>
+<td>41</td>
+<td>com.ekincare.selenium.health.MedicalReports@96def03</td></tr>
+<tr>
+<td title='com.ekincare.selenium.health.MedicalReports.healthMRFamilyDelete()'><b>healthMRFamilyDelete</b><br>Test class: com.ekincare.selenium.health.MedicalReports</td>
+<td></td>
+<td>25</td>
+<td>com.ekincare.selenium.health.MedicalReports@96def03</td></tr>
+<tr>
+<td title='com.ekincare.selenium.health.MedicalReports.healthMRSelf()'><b>healthMRSelf</b><br>Test class: com.ekincare.selenium.health.MedicalReports</td>
+<td></td>
+<td>40</td>
+<td>com.ekincare.selenium.health.MedicalReports@96def03</td></tr>
+<tr>
+<td title='com.ekincare.selenium.health.MedicalReports.healthMRSelfDelete()'><b>healthMRSelfDelete</b><br>Test class: com.ekincare.selenium.health.MedicalReports</td>
+<td></td>
+<td>24</td>
+<td>com.ekincare.selenium.health.MedicalReports@96def03</td></tr>
+<tr>
+<td title='com.ekincare.selenium.improve.Challenges.improve()'><b>improve</b><br>Test class: com.ekincare.selenium.improve.Challenges</td>
+<td></td>
+<td>21</td>
+<td>com.ekincare.selenium.improve.Challenges@5ccddd20</td></tr>
+<tr>
+<td title='com.ekincare.selenium.improve.Challenges.improveRestart()'><b>improveRestart</b><br>Test class: com.ekincare.selenium.improve.Challenges</td>
+<td></td>
+<td>25</td>
+<td>com.ekincare.selenium.improve.Challenges@5ccddd20</td></tr>
+<tr>
+<td title='com.ekincare.selenium.improve.Challenges.improveStop()'><b>improveStop</b><br>Test class: com.ekincare.selenium.improve.Challenges</td>
+<td></td>
+<td>25</td>
+<td>com.ekincare.selenium.improve.Challenges@5ccddd20</td></tr>
+<tr>
+<td title='com.ekincare.selenium.homePage.HomePage.orderMedicinepastuploadself()'><b>orderMedicinepastuploadself</b><br>Test class: com.ekincare.selenium.homePage.HomePage</td>
+<td></td>
+<td>42</td>
+<td>com.ekincare.selenium.homePage.HomePage@2b6faea6</td></tr>
+<tr>
+<td title='com.ekincare.selenium.homePage.HomePage.orderMedicinepastuploadselfDeleteAddress()'><b>orderMedicinepastuploadselfDeleteAddress</b><br>Test class: com.ekincare.selenium.homePage.HomePage</td>
+<td></td>
+<td>28</td>
+<td>com.ekincare.selenium.homePage.HomePage@2b6faea6</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.ordermedicinenameDeleteAddress()'><b>ordermedicinenameDeleteAddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>30</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.ordermedicinenameDeletePlusAddAddress()'><b>ordermedicinenameDeletePlusAddAddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>47</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.ordermedicinenameEditaddress()'><b>ordermedicinenameEditaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>41</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.ordermedicinenamewithaddress()'><b>ordermedicinenamewithaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>30</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.ordermedicinenamewithoutaddress()'><b>ordermedicinenamewithoutaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>42</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadFamilyDeletePlusAddaddress()'><b>pastuploadFamilyDeletePlusAddaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>83</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadFamilyEditaddress()'><b>pastuploadFamilyEditaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>59</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadFamilydeleteaddress()'><b>pastuploadFamilydeleteaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>30</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadFamilywithaddress()'><b>pastuploadFamilywithaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>49</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadFamilywithoutaddress()'><b>pastuploadFamilywithoutaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>79</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadSelfFamilyDeletePlusAddaddress()'><b>pastuploadSelfFamilyDeletePlusAddaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>86</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadSelfFamilydeleteaddress()'><b>pastuploadSelfFamilydeleteaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>33</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadSelfFamilywithaddress()'><b>pastuploadSelfFamilywithaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>51</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadSelfFamilywithoutaddress()'><b>pastuploadSelfFamilywithoutaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>81</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadself()'><b>pastuploadself</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>43</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadselfDeleteplusAddaddress()'><b>pastuploadselfDeleteplusAddaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>48</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadselfdeleteaddress()'><b>pastuploadselfdeleteaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>30</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadselfeditaddress()'><b>pastuploadselfeditaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>60</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.pastuploadselfwithaddress()'><b>pastuploadselfwithaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>64</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.TalkWithFamilyDoctor.scheduleCancel()'><b>scheduleCancel</b><br>Test class: com.ekincare.selenium.benefits.TalkWithFamilyDoctor</td>
+<td></td>
+<td>36</td>
+<td>com.ekincare.selenium.benefits.TalkWithFamilyDoctor@56528192</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.TalkWithFamilyDoctor.scheduleReschedule()'><b>scheduleReschedule</b><br>Test class: com.ekincare.selenium.benefits.TalkWithFamilyDoctor</td>
+<td></td>
+<td>44</td>
+<td>com.ekincare.selenium.benefits.TalkWithFamilyDoctor@56528192</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.TalkWithFamilyDoctor.scheduleplusReschudleplusCancel()'><b>scheduleplusReschudleplusCancel</b><br>Test class: com.ekincare.selenium.benefits.TalkWithFamilyDoctor</td>
+<td></td>
+<td>79</td>
+<td>com.ekincare.selenium.benefits.TalkWithFamilyDoctor@56528192</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.AnnualHealthCheck.selfBenefits()'><b>selfBenefits</b><br>Test class: com.ekincare.selenium.benefits.AnnualHealthCheck</td>
+<td></td>
+<td>52</td>
+<td>com.ekincare.selenium.benefits.AnnualHealthCheck@778d1062</td></tr>
+<tr>
+<td title='com.ekincare.selenium.homePage.HomePage.talkWithDoctor()'><b>talkWithDoctor</b><br>Test class: com.ekincare.selenium.homePage.HomePage</td>
+<td></td>
+<td>37</td>
+<td>com.ekincare.selenium.homePage.HomePage@2b6faea6</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.uploadmedicineDeleteAddaddress()'><b>uploadmedicineDeleteAddaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>41</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.uploadmedicineDeleteaddress()'><b>uploadmedicineDeleteaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>24</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.uploadmedicinewithaddress()'><b>uploadmedicinewithaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>24</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+<tr>
+<td title='com.ekincare.selenium.benefits.OrderMedicine.uploadmedicinewithoutaddress()'><b>uploadmedicinewithoutaddress</b><br>Test class: com.ekincare.selenium.benefits.OrderMedicine</td>
+<td></td>
+<td>39</td>
+<td>com.ekincare.selenium.benefits.OrderMedicine@1f0f1111</td></tr>
+</table><p>
+</body>
+</html>
